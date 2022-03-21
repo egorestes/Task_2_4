@@ -23,7 +23,6 @@ public class Main {
         int k = Integer.parseInt(reader.readLine());
 
         list.removeNodes(n, k);
-        System.out.println();
 
         System.out.println("Список после удаления элементов c n по k:\n" + list.toString());
     }
