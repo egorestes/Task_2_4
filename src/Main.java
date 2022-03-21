@@ -1,13 +1,14 @@
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        // создаём экземпляр нашего класса для списка
+    public static void main(String[] args) throws IOException {
         List<String> list = new List<>();
 
-        // добавляем в него элементы
         String[] strings = {"1", "2", "3", "4", "5", "6", "7"};
         for (int i = 0; i < strings.length; i++) {
             list.addItem(strings[i]);
@@ -16,11 +17,11 @@ public class Main {
         System.out.println("Содержимое односвязного списка:");
         System.out.println(list.toString());
 
-        Scanner scn = new Scanner(System.in);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите N: ");
-        int n = scn.nextInt();
+        int n = Integer.parseInt(reader.readLine());
         System.out.print("Введите K: ");
-        int k = scn.nextInt();
+        int k = Integer.parseInt(reader.readLine());
 
         list.removeNodes(n, k);
         System.out.println();
