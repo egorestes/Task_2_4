@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         List<String> list = new List<>();
 
-        String[] strings = {"1", "2", "3", "4", "5", "6", "7"};
+        String[] strings = {"1", "2", "3", "4", "5", "6", "7", "2", "3", "4", "5", "6", "7"};
 
         for (String string : strings) {
             list.addItem(string);
@@ -26,6 +26,6 @@ public class Main {
         list.removeNodes(n, k);
         System.out.println();
 
-        System.out.println("Список после удаления элементов c n по k (не включая конец):\n" + list.toString());
+        System.out.println("Список после удаления элементов c n по k:\n" + list.toString());
     }
 }
