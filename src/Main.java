@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         List<String> list = new List<>();
 
-        String[] strings = {"1", "2", "3", "4", "5", "6", "7", "2", "3", "4", "5", "6", "7"};
+        String[] strings = {"0","1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"};
 
         for (String string : strings) {
             list.addItem(string);
